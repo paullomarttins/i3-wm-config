@@ -31,7 +31,7 @@ sudo apt install xorg \
 		#numix-icon-theme-circle
 		#papirus-icon-theme
 		#arc-theme
-		breeze-cursor-theme
+		breeze-cursor-theme \
 		#fonts-font-awesome
 
 ## Papel de parede (nitrogen é o padrão das configurações automáticas!)...
