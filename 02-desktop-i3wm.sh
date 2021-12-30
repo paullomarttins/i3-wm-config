@@ -80,5 +80,11 @@ sudo apt install xorg \
 
 ## XDG
 		xdg-user-dirs \
-		xdg-utils
+		xdg-utils \
 
+## Configuração do Rofi com theme
+## Para alterar o theme após a instalação -> rofi-theme-selector
+echo "Iniciando a configuração do Rofi!" \
+
+mkdir -p ~/.config/rofi \
+rofi -dump-config > ~/.config/rofi/config.rasi
