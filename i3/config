@@ -153,8 +153,11 @@ title_align center
 # finds out, if available)
 bar {
 	position top
-	status_command i3blocks /home/paulo/.config/i3blocks.coonf
+	status_command i3blocks ~/.config/i3blocks.coonf
 }
 
 # Execute Compositor
 exec compton
+
+# Execute script Arandr
+exec ~/.screenlayout/desktop.sh
