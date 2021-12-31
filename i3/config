@@ -17,7 +17,7 @@ exec --no-startup-id dex --autostart --environment i3
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-bindsym $mod+Ctrl+l exec i3lock
+bindsym $mod+Ctrl+l exec i3lock -c "000000"
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -154,6 +154,8 @@ title_align center
 bar {
 	position top
 	status_command i3blocks ~/.config/i3blocks.coonf
+	# tray_output none
+	# strip_workspace_numbers yes
 }
 
 # Execute Compositor
@@ -161,3 +163,20 @@ exec compton
 
 # Execute script Arandr
 exec ~/.screenlayout/desktop.sh
+
+## Default border style for new windows (normal|none|pixel)
+default_border pixel 2
+default_floating_border normal
+
+## Hiding borders adjacent to the screen edges (none|vertical|horizontal|both|smart)
+hide_edge_borders smart
+
+## Orientation for new workspaces (horizontal|vertical|auto)
+default_orientation auto
+
+## Xkill
+bindsym $mod+Ctrl+Delete --release exec --no-startup-id xkill
+
+## Screenshot
+bindsym Print exec --no-startup-id flameshot
+# bindsym $mod+k --release exec --no-startup-id flameshot

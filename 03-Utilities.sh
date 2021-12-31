@@ -5,7 +5,7 @@ sudo apt install htop \
 		 transmission \
 		 vlc \
 		 flameshot \
-		 chromium \
+#		 chromium \
 		 firefox \
 		 libreoffice \
 		 myspell-pt-br \
@@ -15,13 +15,11 @@ sudo apt install htop \
 		 xsane \
 		 remmina \
 		 cheese \
-		 pdfarranger \ 
+		 pdfarranger \
  		 keepassxc \
 		 synaptic \
 		 evince \
 		 obs-studio \
 		 clementine \
 		 gcal \
-		 libvirt
-
-		 	
+		 virt-manager
